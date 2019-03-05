@@ -1,0 +1,3336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1"/>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+<section class="section">
+    <div class="columns">
+        <div class="column is-one-fifth has-text-centered has-background-primary">
+            <p class="title is-size-1">Support</p>
+        </div>
+
+        <div class="column is-one-quarter has-background-info">
+            <div class="columns">
+                <div class="column">
+                    <p class="title">Recharge</p>
+                    <div class="field">
+                        <div class="control has-icons-left">
+                            <input class="input" type="text" placeholder="Recharge Value">
+                            <span class="icon is-left">
+                              <i class="fas fa-charging-station"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <p class="title">Duration</p>
+                    <div class="field">
+                        <div class="control has-icons-left">
+                            <input class="input" type="text" placeholder="Duration Value">
+                            <span class="icon is-left">
+                              <i class="fas fa-clock"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-one-quarter has-background-warning">
+            <p class="title">Inscriptions</p>
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="select" class="dropdown-menu-1">
+                        <select>
+                            <option class="ammo-drop-rate">
+                                Ammo Drop Rate
+                            </option>
+                            <option class="repair-drop-rate">
+                                Repair Drop Rate
+                            </option>
+                            <option class="supply-drop-rate">
+                                Supply Drop Rate
+                            </option>
+                            <option class="ammo-drop-qual">
+                                Ammo Drop Quality
+                            </option>
+                            <option class="repair-drop-qual">
+                                Repair Drop Quality
+                            </option>
+                            <option class="supply-luck">
+                                Supply Luck
+                            </option>
+                            <option class="harvest-bonus">
+                                Harvest Bonus
+                            </option>
+                            <option class="pickup-radius">
+                                Pickup Radius
+                            </option>
+                            <option class="thruster-life">
+                                Thruster Life
+                            </option>
+                            <option class="thruster-speed">
+                                Thruster Speed
+                            </option>
+                            <option class="overheat-delay">
+                                Overheat Delay
+                            </option>
+                            <option class="fire-resist">
+                                Fire Resist
+                            </option>
+                            <option class="ice-resist">
+                                Ice Resist
+                            </option>
+                            <option class="elec-resist">
+                                Electric Resist
+                            </option>
+                            <option class="armor-dmg-resist">
+                                Armor Damage Resist
+                            </option>
+                            <option class="armor-max">
+                                Armor Max
+                            </option>
+                            <option class="shield-max">
+                                Shield Max
+                            </option>
+                            <option class="shield-delay">
+                                Shield Delay
+                            </option>
+                            <option class="shield-refresh">
+                                Shield Refresh
+                            </option>
+                            <option class="kb1-dmg">
+                                Keybind 1 Damage
+                            </option>
+                            <option class="kb1-dmg-2">
+                                Keybind 1 Damage
+                            </option>
+                            <option class="kb1-speed">
+                                Keybind 1 Speed
+                            </option>
+                            <option class="kb1-Speed-2">
+                                Keybind 1 Speed
+                            </option>
+                            <option class="gear-dmg">
+                                Gear Damage
+                            </option>
+                            <option class="gear-speed">
+                                Gear Speed
+                            </option>
+                            <option class="ult-dmg">
+                                Ultimate Damage
+                            </option>
+                            <option class="ult-speed">
+                                Ultimate Speed
+                            </option>
+                            <option class="melee">
+                                Melee
+                            </option>
+                            <option class="combo-dmg">
+                                Combo Damage
+                            </option>
+                            <option class="combo-targets">
+                                Combo Targets
+                            </option>
+                            <option class="crit-dmg">
+                                Critical Damage
+                            </option>
+                            <option class="support-speed">
+                                Support Speed
+                            </option>
+                            <option class="elem-dmg">
+                                Elemental Damage
+                            </option>
+                            <option class="dmg">
+                                Damage
+                            </option>
+                            <option class="force">
+                                Force
+                            </option>
+                            <option class="effect">
+                                Effect
+                            </option>
+                            <option class="ice-effect">
+                                Ice Effect
+                            </option>
+                            <option class="fire-effect">
+                                Fire Effect
+                            </option>
+                            <option class="electric-effect">
+                                Electric Effect
+                            </option>
+                            <option class="weap-dmg">
+                                Weapon Damage
+                            </option>
+                            <option class="weap-clip">
+                                Weapon Clip
+                            </option>
+                            <option class="weap-ammo">
+                                Weapon Ammo
+                            </option>
+                            <option class="weap-aim">
+                                Weapon Aim
+                            </option>
+                            <option class="weap-fire-rate">
+                                Weapon Fire Rate
+                            </option>
+                            <option class="weap-reload-time">
+                                Weapon Reload Time
+                            </option>
+                            <option class="weap-blast-dmg">
+                                Weapon Blast Damage
+                            </option>
+                            <option class="gear-symbol-dmg">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 1 Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half">
+                    <div class="select" id="dropdown-menu-2">
+                        <select>
+                            <option class="ammo-drop-rate">
+                                Ammo Drop Rate
+                            </option>
+                            <option class="repair-drop-rate">
+                                Repair Drop Rate
+                            </option>
+                            <option class="supply-drop-rate">
+                                Supply Drop Rate
+                            </option>
+                            <option class="ammo-drop-qual">
+                                Ammo Drop Quality
+                            </option>
+                            <option class="repair-drop-qual">
+                                Repair Drop Quality
+                            </option>
+                            <option class="supply-luck">
+                                Supply Luck
+                            </option>
+                            <option class="harvest-bonus">
+                                Harvest Bonus
+                            </option>
+                            <option class="pickup-radius">
+                                Pickup Radius
+                            </option>
+                            <option class="thruster-life">
+                                Thruster Life
+                            </option>
+                            <option class="thruster-speed">
+                                Thruster Speed
+                            </option>
+                            <option class="overheat-delay">
+                                Overheat Delay
+                            </option>
+                            <option class="fire-resist">
+                                Fire Resist
+                            </option>
+                            <option class="ice-resist">
+                                Ice Resist
+                            </option>
+                            <option class="elec-resist">
+                                Electric Resist
+                            </option>
+                            <option class="armor-dmg-resist">
+                                Armor Damage Resist
+                            </option>
+                            <option class="armor-max">
+                                Armor Max
+                            </option>
+                            <option class="shield-max">
+                                Shield Max
+                            </option>
+                            <option class="shield-delay">
+                                Shield Delay
+                            </option>
+                            <option class="shield-refresh">
+                                Shield Refresh
+                            </option>
+                            <option class="kb1-dmg">
+                                Keybind 1 Damage
+                            </option>
+                            <option class="kb2-dmg">
+                                Keybind 2 Damage
+                            </option>
+                            <option class="kb1-speed">
+                                Keybind 1 Speed
+                            </option>
+                            <option class="kb2-Speed">
+                                Keybind 2 Speed
+                            </option>
+                            <option class="gear-dmg">
+                                Gear Damage
+                            </option>
+                            <option class="gear-speed">
+                                Gear Speed
+                            </option>
+                            <option class="ult-dmg">
+                                Ultimate Damage
+                            </option>
+                            <option class="ult-speed">
+                                Ultimate Speed
+                            </option>
+                            <option class="melee">
+                                Melee
+                            </option>
+                            <option class="combo-dmg">
+                                Combo Damage
+                            </option>
+                            <option class="combo-targets">
+                                Combo Targets
+                            </option>
+                            <option class="crit-dmg">
+                                Critical Damage
+                            </option>
+                            <option class="support-speed">
+                                Support Speed
+                            </option>
+                            <option class="elem-dmg">
+                                Elemental Damage
+                            </option>
+                            <option class="dmg">
+                                Damage
+                            </option>
+                            <option class="force">
+                                Force
+                            </option>
+                            <option class="effect">
+                                Effect
+                            </option>
+                            <option class="ice-effect">
+                                Ice Effect
+                            </option>
+                            <option class="fire-effect">
+                                Fire Effect
+                            </option>
+                            <option class="electric-effect">
+                                Electric Effect
+                            </option>
+                            <option class="weap-dmg">
+                                Weapon Damage
+                            </option>
+                            <option class="weap-clip">
+                                Weapon Clip
+                            </option>
+                            <option class="weap-ammo">
+                                Weapon Ammo
+                            </option>
+                            <option class="weap-aim">
+                                Weapon Aim
+                            </option>
+                            <option class="weap-fire-rate">
+                                Weapon Fire Rate
+                            </option>
+                            <option class="weap-reload-time">
+                                Weapon Reload Time
+                            </option>
+                            <option class="weap-blast-dmg">
+                                Weapon Blast Damage
+                            </option>
+                            <option class="gear-symbol-dmg">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 2 Value">
+                            <span class="icon is-right">
+                <i class="fas fa-percent"></i>
+              </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="select" id="dropdown-menu-3">
+                        <select>
+                            <option class="ammo-drop-rate">
+                                Ammo Drop Rate
+                            </option>
+                            <option class="repair-drop-rate">
+                                Repair Drop Rate
+                            </option>
+                            <option class="supply-drop-rate">
+                                Supply Drop Rate
+                            </option>
+                            <option class="ammo-drop-qual">
+                                Ammo Drop Quality
+                            </option>
+                            <option class="repair-drop-qual">
+                                Repair Drop Quality
+                            </option>
+                            <option class="supply-luck">
+                                Supply Luck
+                            </option>
+                            <option class="harvest-bonus">
+                                Harvest Bonus
+                            </option>
+                            <option class="pickup-radius">
+                                Pickup Radius
+                            </option>
+                            <option class="thruster-life">
+                                Thruster Life
+                            </option>
+                            <option class="thruster-speed">
+                                Thruster Speed
+                            </option>
+                            <option class="overheat-delay">
+                                Overheat Delay
+                            </option>
+                            <option class="fire-resist">
+                                Fire Resist
+                            </option>
+                            <option class="ice-resist">
+                                Ice Resist
+                            </option>
+                            <option class="elec-resist">
+                                Electric Resist
+                            </option>
+                            <option class="armor-dmg-resist">
+                                Armor Damage Resist
+                            </option>
+                            <option class="armor-max">
+                                Armor Max
+                            </option>
+                            <option class="shield-max">
+                                Shield Max
+                            </option>
+                            <option class="shield-delay">
+                                Shield Delay
+                            </option>
+                            <option class="shield-refresh">
+                                Shield Refresh
+                            </option>
+                            <option class="kb1-dmg">
+                                Keybind 1 Damage
+                            </option>
+                            <option class="kb2-dmg">
+                                Keybind 2 Damage
+                            </option>
+                            <option class="kb1-speed">
+                                Keybind 1 Speed
+                            </option>
+                            <option class="kb2-Speed">
+                                Keybind 2 Speed
+                            </option>
+                            <option class="gear-dmg">
+                                Gear Damage
+                            </option>
+                            <option class="gear-speed">
+                                Gear Speed
+                            </option>
+                            <option class="ult-dmg">
+                                Ultimate Damage
+                            </option>
+                            <option class="ult-speed">
+                                Ultimate Speed
+                            </option>
+                            <option class="melee">
+                                Melee
+                            </option>
+                            <option class="combo-dmg">
+                                Combo Damage
+                            </option>
+                            <option class="combo-targets">
+                                Combo Targets
+                            </option>
+                            <option class="crit-dmg">
+                                Critical Damage
+                            </option>
+                            <option class="support-speed">
+                                Support Speed
+                            </option>
+                            <option class="elem-dmg">
+                                Elemental Damage
+                            </option>
+                            <option class="dmg">
+                                Damage
+                            </option>
+                            <option class="force">
+                                Force
+                            </option>
+                            <option class="effect">
+                                Effect
+                            </option>
+                            <option class="ice-effect">
+                                Ice Effect
+                            </option>
+                            <option class="fire-effect">
+                                Fire Effect
+                            </option>
+                            <option class="electric-effect">
+                                Electric Effect
+                            </option>
+                            <option class="weap-dmg">
+                                Weapon Damage
+                            </option>
+                            <option class="weap-clip">
+                                Weapon Clip
+                            </option>
+                            <option class="weap-ammo">
+                                Weapon Ammo
+                            </option>
+                            <option class="weap-aim">
+                                Weapon Aim
+                            </option>
+                            <option class="weap-fire-rate">
+                                Weapon Fire Rate
+                            </option>
+                            <option class="weap-reload-time">
+                                Weapon Reload Time
+                            </option>
+                            <option class="weap-blast-dmg">
+                                Weapon Blast Damage
+                            </option>
+                            <option class="gear-symbol-dmg">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 3 Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-half">
+                    <div class="select" id="dropdown-menu-4">
+                        <select>
+                            <option id="ammo-drop-rate-4">
+                                Ammo Drop Rate
+                            </option>
+                            <option id="repair-drop-rate-4">
+                                Repair Drop Rate
+                            </option>
+                            <option id="supply-drop-rate-4">
+                                Supply Drop Rate
+                            </option>
+                            <option id="ammo-drop-qual-4">
+                                Ammo Drop Quality
+                            </option>
+                            <option id="repair-drop-qual-4">
+                                Repair Drop Quality
+                            </option>
+                            <option id="supply-luck-4">
+                                Supply Luck
+                            </option>
+                            <option id="harvest-bonus-4">
+                                Harvest Bonus
+                            </option>
+                            <option id="pickup-radius-4">
+                                Pickup Radius
+                            </option>
+                            <option id="thruster-life-4">
+                                Thruster Life
+                            </option>
+                            <option id="thruster-speed-4">
+                                Thruster Speed
+                            </option>
+                            <option id="overheat-delay-4">
+                                Overheat Delay
+                            </option>
+                            <option id="fire-resist-4">
+                                Fire Resist
+                            </option>
+                            <option id="ice-resist-4">
+                                Ice Resist
+                            </option>
+                            <option id="elec-resist-4">
+                                Electric Resist
+                            </option>
+                            <option id="armor-dmg-resist-4">
+                                Armor Damage Resist
+                            </option>
+                            <option id="armor-max-4">
+                                Armor Max
+                            </option>
+                            <option id="shield-max-4">
+                                Shield Max
+                            </option>
+                            <option id="shield-delay-4">
+                                Shield Delay
+                            </option>
+                            <option id="shield-refresh-4">
+                                Shield Refresh
+                            </option>
+                            <option id="kb1-dmg-4">
+                                Keybind 1 Damage
+                            </option>
+                            <option id="kb2-dmg-4">
+                                Keybind 2 Damage
+                            </option>
+                            <option id="kb1-speed-4">
+                                Keybind 1 Speed
+                            </option>
+                            <option id="kb2-Speed-4">
+                                Keybind 2 Speed
+                            </option>
+                            <option id="gear-dmg-4">
+                                Gear Damage
+                            </option>
+                            <option id="gear-speed-4">
+                                Gear Speed
+                            </option>
+                            <option id="ult-dmg-4">
+                                Ultimate Damage
+                            </option>
+                            <option id="ult-speed-4">
+                                Ultimate Speed
+                            </option>
+                            <option id="melee-4">
+                                Melee
+                            </option>
+                            <option id="combo-dmg-4">
+                                Combo Damage
+                            </option>
+                            <option id="combo-targets-4">
+                                Combo Targets
+                            </option>
+                            <option id="crit-dmg-4">
+                                Critical Damage
+                            </option>
+                            <option id="support-speed-4">
+                                Support Speed
+                            </option>
+                            <option id="elem-dmg-4">
+                                Elemental Damage
+                            </option>
+                            <option id="dmg-4">
+                                Damage
+                            </option>
+                            <option id="force-4">
+                                Force
+                            </option>
+                            <option id="effect-4">
+                                Effect
+                            </option>
+                            <option id="ice-effect-4">
+                                Ice Effect
+                            </option>
+                            <option id="fire-effect-4">
+                                Fire Effect
+                            </option>
+                            <option id="electric-effect-4">
+                                Electric Effect
+                            </option>
+                            <option id="weap-dmg-4">
+                                Weapon Damage
+                            </option>
+                            <option id="weap-clip-4">
+                                Weapon Clip
+                            </option>
+                            <option id="weap-ammo-4">
+                                Weapon Ammo
+                            </option>
+                            <option id="weap-aim-4">
+                                Weapon Aim
+                            </option>
+                            <option id="weap-fire-rate-4">
+                                Weapon Fire Rate
+                            </option>
+                            <option id="weap-reload-time-4">
+                                Weapon Reload Time
+                            </option>
+                            <option id="weap-blast-dmg-4">
+                                Weapon Blast Damage
+                            </option>
+                            <option id="gear-symbol-dmg-4">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 4 Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="columns">
+        <div class="column is-one-fifth has-text-centered has-background-primary">
+            <p class="title is-size-1">Gears</p>
+        </div>
+
+        <div class="column is-one-quarter has-background-info" id="gear-1">
+            <p class="title">Gear 1</p>
+            <div class="columns">
+                <div class="column is-one-third has-text-centered">
+			<% include partials\damage.ejs %>
+                </div>
+                <div class="column is-one-third has-text-centered">
+                    <p class="title">Recharge</p>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" id="gear-1-recharge-value" type="text" placeholder="Gear Recharge Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="title">Inscriptions</p>
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="select" class="dropdown-menu-1">
+                        <select>
+                            <option class="ammo-drop-rate">
+                                Ammo Drop Rate
+                            </option>
+                            <option class="repair-drop-rate">
+                                Repair Drop Rate
+                            </option>
+                            <option class="supply-drop-rate">
+                                Supply Drop Rate
+                            </option>
+                            <option class="ammo-drop-qual">
+                                Ammo Drop Quality
+                            </option>
+                            <option class="repair-drop-qual">
+                                Repair Drop Quality
+                            </option>
+                            <option class="supply-luck">
+                                Supply Luck
+                            </option>
+                            <option class="harvest-bonus">
+                                Harvest Bonus
+                            </option>
+                            <option class="pickup-radius">
+                                Pickup Radius
+                            </option>
+                            <option class="thruster-life">
+                                Thruster Life
+                            </option>
+                            <option class="thruster-speed">
+                                Thruster Speed
+                            </option>
+                            <option class="overheat-delay">
+                                Overheat Delay
+                            </option>
+                            <option class="fire-resist">
+                                Fire Resist
+                            </option>
+                            <option class="ice-resist">
+                                Ice Resist
+                            </option>
+                            <option class="elec-resist">
+                                Electric Resist
+                            </option>
+                            <option class="armor-dmg-resist">
+                                Armor Damage Resist
+                            </option>
+                            <option class="armor-max">
+                                Armor Max
+                            </option>
+                            <option class="shield-max">
+                                Shield Max
+                            </option>
+                            <option class="shield-delay">
+                                Shield Delay
+                            </option>
+                            <option class="shield-refresh">
+                                Shield Refresh
+                            </option>
+                            <option class="kb1-dmg">
+                                Keybind 1 Damage
+                            </option>
+                            <option class="kb1-dmg-2">
+                                Keybind 1 Damage
+                            </option>
+                            <option class="kb1-speed">
+                                Keybind 1 Speed
+                            </option>
+                            <option class="kb1-Speed-2">
+                                Keybind 1 Speed
+                            </option>
+                            <option class="gear-dmg">
+                                Gear Damage
+                            </option>
+                            <option class="gear-speed">
+                                Gear Speed
+                            </option>
+                            <option class="ult-dmg">
+                                Ultimate Damage
+                            </option>
+                            <option class="ult-speed">
+                                Ultimate Speed
+                            </option>
+                            <option class="melee">
+                                Melee
+                            </option>
+                            <option class="combo-dmg">
+                                Combo Damage
+                            </option>
+                            <option class="combo-targets">
+                                Combo Targets
+                            </option>
+                            <option class="crit-dmg">
+                                Critical Damage
+                            </option>
+                            <option class="support-speed">
+                                Support Speed
+                            </option>
+                            <option class="elem-dmg">
+                                Elemental Damage
+                            </option>
+                            <option class="dmg">
+                                Damage
+                            </option>
+                            <option class="force">
+                                Force
+                            </option>
+                            <option class="effect">
+                                Effect
+                            </option>
+                            <option class="ice-effect">
+                                Ice Effect
+                            </option>
+                            <option class="fire-effect">
+                                Fire Effect
+                            </option>
+                            <option class="electric-effect">
+                                Electric Effect
+                            </option>
+                            <option class="weap-dmg">
+                                Weapon Damage
+                            </option>
+                            <option class="weap-clip">
+                                Weapon Clip
+                            </option>
+                            <option class="weap-ammo">
+                                Weapon Ammo
+                            </option>
+                            <option class="weap-aim">
+                                Weapon Aim
+                            </option>
+                            <option class="weap-fire-rate">
+                                Weapon Fire Rate
+                            </option>
+                            <option class="weap-reload-time">
+                                Weapon Reload Time
+                            </option>
+                            <option class="weap-blast-dmg">
+                                Weapon Blast Damage
+                            </option>
+                            <option class="gear-symbol-dmg">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 1 Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half">
+                    <div class="select" id="dropdown-menu-2">
+                        <select>
+                            <option class="ammo-drop-rate">
+                                Ammo Drop Rate
+                            </option>
+                            <option class="repair-drop-rate">
+                                Repair Drop Rate
+                            </option>
+                            <option class="supply-drop-rate">
+                                Supply Drop Rate
+                            </option>
+                            <option class="ammo-drop-qual">
+                                Ammo Drop Quality
+                            </option>
+                            <option class="repair-drop-qual">
+                                Repair Drop Quality
+                            </option>
+                            <option class="supply-luck">
+                                Supply Luck
+                            </option>
+                            <option class="harvest-bonus">
+                                Harvest Bonus
+                            </option>
+                            <option class="pickup-radius">
+                                Pickup Radius
+                            </option>
+                            <option class="thruster-life">
+                                Thruster Life
+                            </option>
+                            <option class="thruster-speed">
+                                Thruster Speed
+                            </option>
+                            <option class="overheat-delay">
+                                Overheat Delay
+                            </option>
+                            <option class="fire-resist">
+                                Fire Resist
+                            </option>
+                            <option class="ice-resist">
+                                Ice Resist
+                            </option>
+                            <option class="elec-resist">
+                                Electric Resist
+                            </option>
+                            <option class="armor-dmg-resist">
+                                Armor Damage Resist
+                            </option>
+                            <option class="armor-max">
+                                Armor Max
+                            </option>
+                            <option class="shield-max">
+                                Shield Max
+                            </option>
+                            <option class="shield-delay">
+                                Shield Delay
+                            </option>
+                            <option class="shield-refresh">
+                                Shield Refresh
+                            </option>
+                            <option class="kb1-dmg">
+                                Keybind 1 Damage
+                            </option>
+                            <option class="kb2-dmg">
+                                Keybind 2 Damage
+                            </option>
+                            <option class="kb1-speed">
+                                Keybind 1 Speed
+                            </option>
+                            <option class="kb2-Speed">
+                                Keybind 2 Speed
+                            </option>
+                            <option class="gear-dmg">
+                                Gear Damage
+                            </option>
+                            <option class="gear-speed">
+                                Gear Speed
+                            </option>
+                            <option class="ult-dmg">
+                                Ultimate Damage
+                            </option>
+                            <option class="ult-speed">
+                                Ultimate Speed
+                            </option>
+                            <option class="melee">
+                                Melee
+                            </option>
+                            <option class="combo-dmg">
+                                Combo Damage
+                            </option>
+                            <option class="combo-targets">
+                                Combo Targets
+                            </option>
+                            <option class="crit-dmg">
+                                Critical Damage
+                            </option>
+                            <option class="support-speed">
+                                Support Speed
+                            </option>
+                            <option class="elem-dmg">
+                                Elemental Damage
+                            </option>
+                            <option class="dmg">
+                                Damage
+                            </option>
+                            <option class="force">
+                                Force
+                            </option>
+                            <option class="effect">
+                                Effect
+                            </option>
+                            <option class="ice-effect">
+                                Ice Effect
+                            </option>
+                            <option class="fire-effect">
+                                Fire Effect
+                            </option>
+                            <option class="electric-effect">
+                                Electric Effect
+                            </option>
+                            <option class="weap-dmg">
+                                Weapon Damage
+                            </option>
+                            <option class="weap-clip">
+                                Weapon Clip
+                            </option>
+                            <option class="weap-ammo">
+                                Weapon Ammo
+                            </option>
+                            <option class="weap-aim">
+                                Weapon Aim
+                            </option>
+                            <option class="weap-fire-rate">
+                                Weapon Fire Rate
+                            </option>
+                            <option class="weap-reload-time">
+                                Weapon Reload Time
+                            </option>
+                            <option class="weap-blast-dmg">
+                                Weapon Blast Damage
+                            </option>
+                            <option class="gear-symbol-dmg">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 2 Value">
+                            <span class="icon is-right">
+                <i class="fas fa-percent"></i>
+              </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="select" id="dropdown-menu-3">
+                        <select>
+                            <option class="ammo-drop-rate">
+                                Ammo Drop Rate
+                            </option>
+                            <option class="repair-drop-rate">
+                                Repair Drop Rate
+                            </option>
+                            <option class="supply-drop-rate">
+                                Supply Drop Rate
+                            </option>
+                            <option class="ammo-drop-qual">
+                                Ammo Drop Quality
+                            </option>
+                            <option class="repair-drop-qual">
+                                Repair Drop Quality
+                            </option>
+                            <option class="supply-luck">
+                                Supply Luck
+                            </option>
+                            <option class="harvest-bonus">
+                                Harvest Bonus
+                            </option>
+                            <option class="pickup-radius">
+                                Pickup Radius
+                            </option>
+                            <option class="thruster-life">
+                                Thruster Life
+                            </option>
+                            <option class="thruster-speed">
+                                Thruster Speed
+                            </option>
+                            <option class="overheat-delay">
+                                Overheat Delay
+                            </option>
+                            <option class="fire-resist">
+                                Fire Resist
+                            </option>
+                            <option class="ice-resist">
+                                Ice Resist
+                            </option>
+                            <option class="elec-resist">
+                                Electric Resist
+                            </option>
+                            <option class="armor-dmg-resist">
+                                Armor Damage Resist
+                            </option>
+                            <option class="armor-max">
+                                Armor Max
+                            </option>
+                            <option class="shield-max">
+                                Shield Max
+                            </option>
+                            <option class="shield-delay">
+                                Shield Delay
+                            </option>
+                            <option class="shield-refresh">
+                                Shield Refresh
+                            </option>
+                            <option class="kb1-dmg">
+                                Keybind 1 Damage
+                            </option>
+                            <option class="kb2-dmg">
+                                Keybind 2 Damage
+                            </option>
+                            <option class="kb1-speed">
+                                Keybind 1 Speed
+                            </option>
+                            <option class="kb2-Speed">
+                                Keybind 2 Speed
+                            </option>
+                            <option class="gear-dmg">
+                                Gear Damage
+                            </option>
+                            <option class="gear-speed">
+                                Gear Speed
+                            </option>
+                            <option class="ult-dmg">
+                                Ultimate Damage
+                            </option>
+                            <option class="ult-speed">
+                                Ultimate Speed
+                            </option>
+                            <option class="melee">
+                                Melee
+                            </option>
+                            <option class="combo-dmg">
+                                Combo Damage
+                            </option>
+                            <option class="combo-targets">
+                                Combo Targets
+                            </option>
+                            <option class="crit-dmg">
+                                Critical Damage
+                            </option>
+                            <option class="support-speed">
+                                Support Speed
+                            </option>
+                            <option class="elem-dmg">
+                                Elemental Damage
+                            </option>
+                            <option class="dmg">
+                                Damage
+                            </option>
+                            <option class="force">
+                                Force
+                            </option>
+                            <option class="effect">
+                                Effect
+                            </option>
+                            <option class="ice-effect">
+                                Ice Effect
+                            </option>
+                            <option class="fire-effect">
+                                Fire Effect
+                            </option>
+                            <option class="electric-effect">
+                                Electric Effect
+                            </option>
+                            <option class="weap-dmg">
+                                Weapon Damage
+                            </option>
+                            <option class="weap-clip">
+                                Weapon Clip
+                            </option>
+                            <option class="weap-ammo">
+                                Weapon Ammo
+                            </option>
+                            <option class="weap-aim">
+                                Weapon Aim
+                            </option>
+                            <option class="weap-fire-rate">
+                                Weapon Fire Rate
+                            </option>
+                            <option class="weap-reload-time">
+                                Weapon Reload Time
+                            </option>
+                            <option class="weap-blast-dmg">
+                                Weapon Blast Damage
+                            </option>
+                            <option class="gear-symbol-dmg">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 3 Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-half">
+                    <div class="select" id="dropdown-menu-4">
+                        <select>
+                            <option id="ammo-drop-rate-4">
+                                Ammo Drop Rate
+                            </option>
+                            <option id="repair-drop-rate-4">
+                                Repair Drop Rate
+                            </option>
+                            <option id="supply-drop-rate-4">
+                                Supply Drop Rate
+                            </option>
+                            <option id="ammo-drop-qual-4">
+                                Ammo Drop Quality
+                            </option>
+                            <option id="repair-drop-qual-4">
+                                Repair Drop Quality
+                            </option>
+                            <option id="supply-luck-4">
+                                Supply Luck
+                            </option>
+                            <option id="harvest-bonus-4">
+                                Harvest Bonus
+                            </option>
+                            <option id="pickup-radius-4">
+                                Pickup Radius
+                            </option>
+                            <option id="thruster-life-4">
+                                Thruster Life
+                            </option>
+                            <option id="thruster-speed-4">
+                                Thruster Speed
+                            </option>
+                            <option id="overheat-delay-4">
+                                Overheat Delay
+                            </option>
+                            <option id="fire-resist-4">
+                                Fire Resist
+                            </option>
+                            <option id="ice-resist-4">
+                                Ice Resist
+                            </option>
+                            <option id="elec-resist-4">
+                                Electric Resist
+                            </option>
+                            <option id="armor-dmg-resist-4">
+                                Armor Damage Resist
+                            </option>
+                            <option id="armor-max-4">
+                                Armor Max
+                            </option>
+                            <option id="shield-max-4">
+                                Shield Max
+                            </option>
+                            <option id="shield-delay-4">
+                                Shield Delay
+                            </option>
+                            <option id="shield-refresh-4">
+                                Shield Refresh
+                            </option>
+                            <option id="kb1-dmg-4">
+                                Keybind 1 Damage
+                            </option>
+                            <option id="kb2-dmg-4">
+                                Keybind 2 Damage
+                            </option>
+                            <option id="kb1-speed-4">
+                                Keybind 1 Speed
+                            </option>
+                            <option id="kb2-Speed-4">
+                                Keybind 2 Speed
+                            </option>
+                            <option id="gear-dmg-4">
+                                Gear Damage
+                            </option>
+                            <option id="gear-speed-4">
+                                Gear Speed
+                            </option>
+                            <option id="ult-dmg-4">
+                                Ultimate Damage
+                            </option>
+                            <option id="ult-speed-4">
+                                Ultimate Speed
+                            </option>
+                            <option id="melee-4">
+                                Melee
+                            </option>
+                            <option id="combo-dmg-4">
+                                Combo Damage
+                            </option>
+                            <option id="combo-targets-4">
+                                Combo Targets
+                            </option>
+                            <option id="crit-dmg-4">
+                                Critical Damage
+                            </option>
+                            <option id="support-speed-4">
+                                Support Speed
+                            </option>
+                            <option id="elem-dmg-4">
+                                Elemental Damage
+                            </option>
+                            <option id="dmg-4">
+                                Damage
+                            </option>
+                            <option id="force-4">
+                                Force
+                            </option>
+                            <option id="effect-4">
+                                Effect
+                            </option>
+                            <option id="ice-effect-4">
+                                Ice Effect
+                            </option>
+                            <option id="fire-effect-4">
+                                Fire Effect
+                            </option>
+                            <option id="electric-effect-4">
+                                Electric Effect
+                            </option>
+                            <option id="weap-dmg-4">
+                                Weapon Damage
+                            </option>
+                            <option id="weap-clip-4">
+                                Weapon Clip
+                            </option>
+                            <option id="weap-ammo-4">
+                                Weapon Ammo
+                            </option>
+                            <option id="weap-aim-4">
+                                Weapon Aim
+                            </option>
+                            <option id="weap-fire-rate-4">
+                                Weapon Fire Rate
+                            </option>
+                            <option id="weap-reload-time-4">
+                                Weapon Reload Time
+                            </option>
+                            <option id="weap-blast-dmg-4">
+                                Weapon Blast Damage
+                            </option>
+                            <option id="gear-symbol-dmg-4">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 4 Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-one-quarter has-background-warning">
+            <p class="title">Gear 2</p>
+            <div class="columns">
+                <div class="column is-one-third has-text-centered">
+                    <p class="title">Damage</p>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" id="gear-dmg-value" type="text" placeholder="Gear Damage Value">
+                            <span class="icon is-right">
+                                    <i class="fas fa-percent"></i>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third has-text-centered">
+                    <p class="title">Recharge</p>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" id="gear-recharge-value" type="text" placeholder="Gear Recharge Value">
+                            <span class="icon is-right">
+                                    <i class="fas fa-percent"></i>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="title">Inscriptions</p>
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="select" id="dropdown-menu-1">
+                        <select>
+                            <option id="ammo-drop-rate-1">
+                                Ammo Drop Rate
+                            </option>
+                            <option id="repair-drop-rate-1">
+                                Repair Drop Rate
+                            </option>
+                            <option id="supply-drop-rate-1">
+                                Supply Drop Rate
+                            </option>
+                            <option id="ammo-drop-qual-1">
+                                Ammo Drop Quality
+                            </option>
+                            <option id="repair-drop-qual-1">
+                                Repair Drop Quality
+                            </option>
+                            <option id="supply-luck-1">
+                                Supply Luck
+                            </option>
+                            <option id="harvest-bonus-1">
+                                Harvest Bonus
+                            </option>
+                            <option id="pickup-radius-1">
+                                Pickup Radius
+                            </option>
+                            <option id="thruster-life-1">
+                                Thruster Life
+                            </option>
+                            <option id="thruster-speed-1">
+                                Thruster Speed
+                            </option>
+                            <option id="overheat-delay-1">
+                                Overheat Delay
+                            </option>
+                            <option id="fire-resist-1">
+                                Fire Resist
+                            </option>
+                            <option id="ice-resist-1">
+                                Ice Resist
+                            </option>
+                            <option id="elec-resist-1">
+                                Electric Resist
+                            </option>
+                            <option id="armor-dmg-resist-1">
+                                Armor Damage Resist
+                            </option>
+                            <option id="armor-max-1">
+                                Armor Max
+                            </option>
+                            <option id="shield-max-1">
+                                Shield Max
+                            </option>
+                            <option id="shield-delay-1">
+                                Shield Delay
+                            </option>
+                            <option id="shield-refresh-1">
+                                Shield Refresh
+                            </option>
+                            <option id="kb1-dmg-1">
+                                Keybind 1 Damage
+                            </option>
+                            <option id="kb1-dmg-2">
+                                Keybind 1 Damage
+                            </option>
+                            <option id="kb1-speed-1">
+                                Keybind 1 Speed
+                            </option>
+                            <option id="kb1-Speed-2">
+                                Keybind 1 Speed
+                            </option>
+                            <option id="gear-dmg-1">
+                                Gear Damage
+                            </option>
+                            <option id="gear-speed-1">
+                                Gear Speed
+                            </option>
+                            <option id="ult-dmg-1">
+                                Ultimate Damage
+                            </option>
+                            <option id="ult-speed-1">
+                                Ultimate Speed
+                            </option>
+                            <option id="melee-1">
+                                Melee
+                            </option>
+                            <option id="combo-dmg-1">
+                                Combo Damage
+                            </option>
+                            <option id="combo-targets-1">
+                                Combo Targets
+                            </option>
+                            <option id="crit-dmg-1">
+                                Critical Damage
+                            </option>
+                            <option id="support-speed-1">
+                                Support Speed
+                            </option>
+                            <option id="elem-dmg-1">
+                                Elemental Damage
+                            </option>
+                            <option id="dmg-1">
+                                Damage
+                            </option>
+                            <option id="force-1">
+                                Force
+                            </option>
+                            <option id="effect-1">
+                                Effect
+                            </option>
+                            <option id="ice-effect-1">
+                                Ice Effect
+                            </option>
+                            <option id="fire-effect-1">
+                                Fire Effect
+                            </option>
+                            <option id="electric-effect-1">
+                                Electric Effect
+                            </option>
+                            <option id="weap-dmg-1">
+                                Weapon Damage
+                            </option>
+                            <option id="weap-clip-1">
+                                Weapon Clip
+                            </option>
+                            <option id="weap-ammo-1">
+                                Weapon Ammo
+                            </option>
+                            <option id="weap-aim-1">
+                                Weapon Aim
+                            </option>
+                            <option id="weap-fire-rate-1">
+                                Weapon Fire Rate
+                            </option>
+                            <option id="weap-reload-time-1">
+                                Weapon Reload Time
+                            </option>
+                            <option id="weap-blast-dmg-1">
+                                Weapon Blast Damage
+                            </option>
+                            <option id="gear-symbol-dmg-1">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 1 Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-half">
+                    <div class="select" id="dropdown-menu-2">
+                        <select>
+                            <option id="ammo-drop-rate-2">
+                                Ammo Drop Rate
+                            </option>
+                            <option id="repair-drop-rate-2">
+                                Repair Drop Rate
+                            </option>
+                            <option id="supply-drop-rate-2">
+                                Supply Drop Rate
+                            </option>
+                            <option id="ammo-drop-qual-2">
+                                Ammo Drop Quality
+                            </option>
+                            <option id="repair-drop-qual-2">
+                                Repair Drop Quality
+                            </option>
+                            <option id="supply-luck-2">
+                                Supply Luck
+                            </option>
+                            <option id="harvest-bonus-2">
+                                Harvest Bonus
+                            </option>
+                            <option id="pickup-radius-2">
+                                Pickup Radius
+                            </option>
+                            <option id="thruster-life-2">
+                                Thruster Life
+                            </option>
+                            <option id="thruster-speed-2">
+                                Thruster Speed
+                            </option>
+                            <option id="overheat-delay-2">
+                                Overheat Delay
+                            </option>
+                            <option id="fire-resist-2">
+                                Fire Resist
+                            </option>
+                            <option id="ice-resist-2">
+                                Ice Resist
+                            </option>
+                            <option id="elec-resist-2">
+                                Electric Resist
+                            </option>
+                            <option id="armor-dmg-resist-2">
+                                Armor Damage Resist
+                            </option>
+                            <option id="armor-max-2">
+                                Armor Max
+                            </option>
+                            <option id="shield-max-2">
+                                Shield Max
+                            </option>
+                            <option id="shield-delay-2">
+                                Shield Delay
+                            </option>
+                            <option id="shield-refresh-2">
+                                Shield Refresh
+                            </option>
+                            <option id="kb1-dmg-2">
+                                Keybind 1 Damage
+                            </option>
+                            <option id="kb2-dmg-2">
+                                Keybind 2 Damage
+                            </option>
+                            <option id="kb1-speed-2">
+                                Keybind 1 Speed
+                            </option>
+                            <option id="kb2-Speed-2">
+                                Keybind 2 Speed
+                            </option>
+                            <option id="gear-dmg-2">
+                                Gear Damage
+                            </option>
+                            <option id="gear-speed-2">
+                                Gear Speed
+                            </option>
+                            <option id="ult-dmg-2">
+                                Ultimate Damage
+                            </option>
+                            <option id="ult-speed-2">
+                                Ultimate Speed
+                            </option>
+                            <option id="melee-2">
+                                Melee
+                            </option>
+                            <option id="combo-dmg-2">
+                                Combo Damage
+                            </option>
+                            <option id="combo-targets-2">
+                                Combo Targets
+                            </option>
+                            <option id="crit-dmg-2">
+                                Critical Damage
+                            </option>
+                            <option id="support-speed-2">
+                                Support Speed
+                            </option>
+                            <option id="elem-dmg-2">
+                                Elemental Damage
+                            </option>
+                            <option id="dmg-2">
+                                Damage
+                            </option>
+                            <option id="force-2">
+                                Force
+                            </option>
+                            <option id="effect-2">
+                                Effect
+                            </option>
+                            <option id="ice-effect-2">
+                                Ice Effect
+                            </option>
+                            <option id="fire-effect-2">
+                                Fire Effect
+                            </option>
+                            <option id="electric-effect-2">
+                                Electric Effect
+                            </option>
+                            <option id="weap-dmg-2">
+                                Weapon Damage
+                            </option>
+                            <option id="weap-clip-2">
+                                Weapon Clip
+                            </option>
+                            <option id="weap-ammo-2">
+                                Weapon Ammo
+                            </option>
+                            <option id="weap-aim-2">
+                                Weapon Aim
+                            </option>
+                            <option id="weap-fire-rate-2">
+                                Weapon Fire Rate
+                            </option>
+                            <option id="weap-reload-time-2">
+                                Weapon Reload Time
+                            </option>
+                            <option id="weap-blast-dmg-2">
+                                Weapon Blast Damage
+                            </option>
+                            <option id="gear-symbol-dmg-2">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 2 Value">
+                            <span class="icon is-right">
+                                    <i class="fas fa-percent"></i>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="select" id="dropdown-menu-3">
+                        <select>
+                            <option id="ammo-drop-rate-3">
+                                Ammo Drop Rate
+                            </option>
+                            <option id="repair-drop-rate-3">
+                                Repair Drop Rate
+                            </option>
+                            <option id="supply-drop-rate-3">
+                                Supply Drop Rate
+                            </option>
+                            <option id="ammo-drop-qual-3">
+                                Ammo Drop Quality
+                            </option>
+                            <option id="repair-drop-qual-3">
+                                Repair Drop Quality
+                            </option>
+                            <option id="supply-luck-3">
+                                Supply Luck
+                            </option>
+                            <option id="harvest-bonus-3">
+                                Harvest Bonus
+                            </option>
+                            <option id="pickup-radius-3">
+                                Pickup Radius
+                            </option>
+                            <option id="thruster-life-3">
+                                Thruster Life
+                            </option>
+                            <option id="thruster-speed-3">
+                                Thruster Speed
+                            </option>
+                            <option id="overheat-delay-3">
+                                Overheat Delay
+                            </option>
+                            <option id="fire-resist-3">
+                                Fire Resist
+                            </option>
+                            <option id="ice-resist-3">
+                                Ice Resist
+                            </option>
+                            <option id="elec-resist-3">
+                                Electric Resist
+                            </option>
+                            <option id="armor-dmg-resist-3">
+                                Armor Damage Resist
+                            </option>
+                            <option id="armor-max-3">
+                                Armor Max
+                            </option>
+                            <option id="shield-max-3">
+                                Shield Max
+                            </option>
+                            <option id="shield-delay-3">
+                                Shield Delay
+                            </option>
+                            <option id="shield-refresh-3">
+                                Shield Refresh
+                            </option>
+                            <option id="kb1-dmg-3">
+                                Keybind 1 Damage
+                            </option>
+                            <option id="kb2-dmg-3">
+                                Keybind 2 Damage
+                            </option>
+                            <option id="kb1-speed-3">
+                                Keybind 1 Speed
+                            </option>
+                            <option id="kb2-Speed-3">
+                                Keybind 2 Speed
+                            </option>
+                            <option id="gear-dmg-3">
+                                Gear Damage
+                            </option>
+                            <option id="gear-speed-3">
+                                Gear Speed
+                            </option>
+                            <option id="ult-dmg-3">
+                                Ultimate Damage
+                            </option>
+                            <option id="ult-speed-3">
+                                Ultimate Speed
+                            </option>
+                            <option id="melee-3">
+                                Melee
+                            </option>
+                            <option id="combo-dmg-3">
+                                Combo Damage
+                            </option>
+                            <option id="combo-targets-3">
+                                Combo Targets
+                            </option>
+                            <option id="crit-dmg-3">
+                                Critical Damage
+                            </option>
+                            <option id="support-speed-3">
+                                Support Speed
+                            </option>
+                            <option id="elem-dmg-3">
+                                Elemental Damage
+                            </option>
+                            <option id="dmg-3">
+                                Damage
+                            </option>
+                            <option id="force-3">
+                                Force
+                            </option>
+                            <option id="effect-3">
+                                Effect
+                            </option>
+                            <option id="ice-effect-3">
+                                Ice Effect
+                            </option>
+                            <option id="fire-effect-3">
+                                Fire Effect
+                            </option>
+                            <option id="electric-effect-3">
+                                Electric Effect
+                            </option>
+                            <option id="weap-dmg-3">
+                                Weapon Damage
+                            </option>
+                            <option id="weap-clip-3">
+                                Weapon Clip
+                            </option>
+                            <option id="weap-ammo-3">
+                                Weapon Ammo
+                            </option>
+                            <option id="weap-aim-3">
+                                Weapon Aim
+                            </option>
+                            <option id="weap-fire-rate-3">
+                                Weapon Fire Rate
+                            </option>
+                            <option id="weap-reload-time-3">
+                                Weapon Reload Time
+                            </option>
+                            <option id="weap-blast-dmg-3">
+                                Weapon Blast Damage
+                            </option>
+                            <option id="gear-symbol-dmg-3">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 3 Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half">
+                    <div class="select" id="dropdown-menu-4">
+                        <select>
+                            <option id="ammo-drop-rate-4">
+                                Ammo Drop Rate
+                            </option>
+                            <option id="repair-drop-rate-4">
+                                Repair Drop Rate
+                            </option>
+                            <option id="supply-drop-rate-4">
+                                Supply Drop Rate
+                            </option>
+                            <option id="ammo-drop-qual-4">
+                                Ammo Drop Quality
+                            </option>
+                            <option id="repair-drop-qual-4">
+                                Repair Drop Quality
+                            </option>
+                            <option id="supply-luck-4">
+                                Supply Luck
+                            </option>
+                            <option id="harvest-bonus-4">
+                                Harvest Bonus
+                            </option>
+                            <option id="pickup-radius-4">
+                                Pickup Radius
+                            </option>
+                            <option id="thruster-life-4">
+                                Thruster Life
+                            </option>
+                            <option id="thruster-speed-4">
+                                Thruster Speed
+                            </option>
+                            <option id="overheat-delay-4">
+                                Overheat Delay
+                            </option>
+                            <option id="fire-resist-4">
+                                Fire Resist
+                            </option>
+                            <option id="ice-resist-4">
+                                Ice Resist
+                            </option>
+                            <option id="elec-resist-4">
+                                Electric Resist
+                            </option>
+                            <option id="armor-dmg-resist-4">
+                                Armor Damage Resist
+                            </option>
+                            <option id="armor-max-4">
+                                Armor Max
+                            </option>
+                            <option id="shield-max-4">
+                                Shield Max
+                            </option>
+                            <option id="shield-delay-4">
+                                Shield Delay
+                            </option>
+                            <option id="shield-refresh-4">
+                                Shield Refresh
+                            </option>
+                            <option id="kb1-dmg-4">
+                                Keybind 1 Damage
+                            </option>
+                            <option id="kb2-dmg-4">
+                                Keybind 2 Damage
+                            </option>
+                            <option id="kb1-speed-4">
+                                Keybind 1 Speed
+                            </option>
+                            <option id="kb2-Speed-4">
+                                Keybind 2 Speed
+                            </option>
+                            <option id="gear-dmg-4">
+                                Gear Damage
+                            </option>
+                            <option id="gear-speed-4">
+                                Gear Speed
+                            </option>
+                            <option id="ult-dmg-4">
+                                Ultimate Damage
+                            </option>
+                            <option id="ult-speed-4">
+                                Ultimate Speed
+                            </option>
+                            <option id="melee-4">
+                                Melee
+                            </option>
+                            <option id="combo-dmg-4">
+                                Combo Damage
+                            </option>
+                            <option id="combo-targets-4">
+                                Combo Targets
+                            </option>
+                            <option id="crit-dmg-4">
+                                Critical Damage
+                            </option>
+                            <option id="support-speed-4">
+                                Support Speed
+                            </option>
+                            <option id="elem-dmg-4">
+                                Elemental Damage
+                            </option>
+                            <option id="dmg-4">
+                                Damage
+                            </option>
+                            <option id="force-4">
+                                Force
+                            </option>
+                            <option id="effect-4">
+                                Effect
+                            </option>
+                            <option id="ice-effect-4">
+                                Ice Effect
+                            </option>
+                            <option id="fire-effect-4">
+                                Fire Effect
+                            </option>
+                            <option id="electric-effect-4">
+                                Electric Effect
+                            </option>
+                            <option id="weap-dmg-4">
+                                Weapon Damage
+                            </option>
+                            <option id="weap-clip-4">
+                                Weapon Clip
+                            </option>
+                            <option id="weap-ammo-4">
+                                Weapon Ammo
+                            </option>
+                            <option id="weap-aim-4">
+                                Weapon Aim
+                            </option>
+                            <option id="weap-fire-rate-4">
+                                Weapon Fire Rate
+                            </option>
+                            <option id="weap-reload-time-4">
+                                Weapon Reload Time
+                            </option>
+                            <option id="weap-blast-dmg-4">
+                                Weapon Blast Damage
+                            </option>
+                            <option id="gear-symbol-dmg-4">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 4 Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="columns">
+        <div class="column is-one-fifth has-background-primary">
+            <p class="title">Weapons</p>
+        </div>
+
+        <div class="column is-one-quarter has-background-info">
+            <p class="title">Weapon 1</p>
+            <div class="columns">
+                <div class="column is-one-third">
+                    <p class="title">Damage</p>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" id="weap-1-dmg-value" type="text" placeholder="Damage Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <p class="title">RPM</p>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" id="weap-1-rpm-value" type="text" placeholder="RPM Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <p class="title">Ammo</p>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" id="weap-1-ammo-value" type="text" placeholder="Ammo Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="title">Inscriptions</p>
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="select" id="dropdown-menu-1">
+                        <select>
+                            <option id="ammo-drop-rate-1">
+                                Ammo Drop Rate
+                            </option>
+                            <option id="repair-drop-rate-1">
+                                Repair Drop Rate
+                            </option>
+                            <option id="supply-drop-rate-1">
+                                Supply Drop Rate
+                            </option>
+                            <option id="ammo-drop-qual-1">
+                                Ammo Drop Quality
+                            </option>
+                            <option id="repair-drop-qual-1">
+                                Repair Drop Quality
+                            </option>
+                            <option id="supply-luck-1">
+                                Supply Luck
+                            </option>
+                            <option id="harvest-bonus-1">
+                                Harvest Bonus
+                            </option>
+                            <option id="pickup-radius-1">
+                                Pickup Radius
+                            </option>
+                            <option id="thruster-life-1">
+                                Thruster Life
+                            </option>
+                            <option id="thruster-speed-1">
+                                Thruster Speed
+                            </option>
+                            <option id="overheat-delay-1">
+                                Overheat Delay
+                            </option>
+                            <option id="fire-resist-1">
+                                Fire Resist
+                            </option>
+                            <option id="ice-resist-1">
+                                Ice Resist
+                            </option>
+                            <option id="elec-resist-1">
+                                Electric Resist
+                            </option>
+                            <option id="armor-dmg-resist-1">
+                                Armor Damage Resist
+                            </option>
+                            <option id="armor-max-1">
+                                Armor Max
+                            </option>
+                            <option id="shield-max-1">
+                                Shield Max
+                            </option>
+                            <option id="shield-delay-1">
+                                Shield Delay
+                            </option>
+                            <option id="shield-refresh-1">
+                                Shield Refresh
+                            </option>
+                            <option id="kb1-dmg-1">
+                                Keybind 1 Damage
+                            </option>
+                            <option id="kb1-dmg-2">
+                                Keybind 1 Damage
+                            </option>
+                            <option id="kb1-speed-1">
+                                Keybind 1 Speed
+                            </option>
+                            <option id="kb1-Speed-2">
+                                Keybind 1 Speed
+                            </option>
+                            <option id="gear-dmg-1">
+                                Gear Damage
+                            </option>
+                            <option id="gear-speed-1">
+                                Gear Speed
+                            </option>
+                            <option id="ult-dmg-1">
+                                Ultimate Damage
+                            </option>
+                            <option id="ult-speed-1">
+                                Ultimate Speed
+                            </option>
+                            <option id="melee-1">
+                                Melee
+                            </option>
+                            <option id="combo-dmg-1">
+                                Combo Damage
+                            </option>
+                            <option id="combo-targets-1">
+                                Combo Targets
+                            </option>
+                            <option id="crit-dmg-1">
+                                Critical Damage
+                            </option>
+                            <option id="support-speed-1">
+                                Support Speed
+                            </option>
+                            <option id="elem-dmg-1">
+                                Elemental Damage
+                            </option>
+                            <option id="dmg-1">
+                                Damage
+                            </option>
+                            <option id="force-1">
+                                Force
+                            </option>
+                            <option id="effect-1">
+                                Effect
+                            </option>
+                            <option id="ice-effect-1">
+                                Ice Effect
+                            </option>
+                            <option id="fire-effect-1">
+                                Fire Effect
+                            </option>
+                            <option id="electric-effect-1">
+                                Electric Effect
+                            </option>
+                            <option id="weap-dmg-1">
+                                Weapon Damage
+                            </option>
+                            <option id="weap-clip-1">
+                                Weapon Clip
+                            </option>
+                            <option id="weap-ammo-1">
+                                Weapon Ammo
+                            </option>
+                            <option id="weap-aim-1">
+                                Weapon Aim
+                            </option>
+                            <option id="weap-fire-rate-1">
+                                Weapon Fire Rate
+                            </option>
+                            <option id="weap-reload-time-1">
+                                Weapon Reload Time
+                            </option>
+                            <option id="weap-blast-dmg-1">
+                                Weapon Blast Damage
+                            </option>
+                            <option id="gear-symbol-dmg-1">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 1 Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-half">
+                    <div class="select" id="dropdown-menu-2">
+                        <select>
+                            <option id="ammo-drop-rate-2">
+                                Ammo Drop Rate
+                            </option>
+                            <option id="repair-drop-rate-2">
+                                Repair Drop Rate
+                            </option>
+                            <option id="supply-drop-rate-2">
+                                Supply Drop Rate
+                            </option>
+                            <option id="ammo-drop-qual-2">
+                                Ammo Drop Quality
+                            </option>
+                            <option id="repair-drop-qual-2">
+                                Repair Drop Quality
+                            </option>
+                            <option id="supply-luck-2">
+                                Supply Luck
+                            </option>
+                            <option id="harvest-bonus-2">
+                                Harvest Bonus
+                            </option>
+                            <option id="pickup-radius-2">
+                                Pickup Radius
+                            </option>
+                            <option id="thruster-life-2">
+                                Thruster Life
+                            </option>
+                            <option id="thruster-speed-2">
+                                Thruster Speed
+                            </option>
+                            <option id="overheat-delay-2">
+                                Overheat Delay
+                            </option>
+                            <option id="fire-resist-2">
+                                Fire Resist
+                            </option>
+                            <option id="ice-resist-2">
+                                Ice Resist
+                            </option>
+                            <option id="elec-resist-2">
+                                Electric Resist
+                            </option>
+                            <option id="armor-dmg-resist-2">
+                                Armor Damage Resist
+                            </option>
+                            <option id="armor-max-2">
+                                Armor Max
+                            </option>
+                            <option id="shield-max-2">
+                                Shield Max
+                            </option>
+                            <option id="shield-delay-2">
+                                Shield Delay
+                            </option>
+                            <option id="shield-refresh-2">
+                                Shield Refresh
+                            </option>
+                            <option id="kb1-dmg-2">
+                                Keybind 1 Damage
+                            </option>
+                            <option id="kb2-dmg-2">
+                                Keybind 2 Damage
+                            </option>
+                            <option id="kb1-speed-2">
+                                Keybind 1 Speed
+                            </option>
+                            <option id="kb2-Speed-2">
+                                Keybind 2 Speed
+                            </option>
+                            <option id="gear-dmg-2">
+                                Gear Damage
+                            </option>
+                            <option id="gear-speed-2">
+                                Gear Speed
+                            </option>
+                            <option id="ult-dmg-2">
+                                Ultimate Damage
+                            </option>
+                            <option id="ult-speed-2">
+                                Ultimate Speed
+                            </option>
+                            <option id="melee-2">
+                                Melee
+                            </option>
+                            <option id="combo-dmg-2">
+                                Combo Damage
+                            </option>
+                            <option id="combo-targets-2">
+                                Combo Targets
+                            </option>
+                            <option id="crit-dmg-2">
+                                Critical Damage
+                            </option>
+                            <option id="support-speed-2">
+                                Support Speed
+                            </option>
+                            <option id="elem-dmg-2">
+                                Elemental Damage
+                            </option>
+                            <option id="dmg-2">
+                                Damage
+                            </option>
+                            <option id="force-2">
+                                Force
+                            </option>
+                            <option id="effect-2">
+                                Effect
+                            </option>
+                            <option id="ice-effect-2">
+                                Ice Effect
+                            </option>
+                            <option id="fire-effect-2">
+                                Fire Effect
+                            </option>
+                            <option id="electric-effect-2">
+                                Electric Effect
+                            </option>
+                            <option id="weap-dmg-2">
+                                Weapon Damage
+                            </option>
+                            <option id="weap-clip-2">
+                                Weapon Clip
+                            </option>
+                            <option id="weap-ammo-2">
+                                Weapon Ammo
+                            </option>
+                            <option id="weap-aim-2">
+                                Weapon Aim
+                            </option>
+                            <option id="weap-fire-rate-2">
+                                Weapon Fire Rate
+                            </option>
+                            <option id="weap-reload-time-2">
+                                Weapon Reload Time
+                            </option>
+                            <option id="weap-blast-dmg-2">
+                                Weapon Blast Damage
+                            </option>
+                            <option id="gear-symbol-dmg-2">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 2 Value">
+                            <span class="icon is-right">
+                                    <i class="fas fa-percent"></i>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="select" id="dropdown-menu-3">
+                        <select>
+                            <option id="ammo-drop-rate-3">
+                                Ammo Drop Rate
+                            </option>
+                            <option id="repair-drop-rate-3">
+                                Repair Drop Rate
+                            </option>
+                            <option id="supply-drop-rate-3">
+                                Supply Drop Rate
+                            </option>
+                            <option id="ammo-drop-qual-3">
+                                Ammo Drop Quality
+                            </option>
+                            <option id="repair-drop-qual-3">
+                                Repair Drop Quality
+                            </option>
+                            <option id="supply-luck-3">
+                                Supply Luck
+                            </option>
+                            <option id="harvest-bonus-3">
+                                Harvest Bonus
+                            </option>
+                            <option id="pickup-radius-3">
+                                Pickup Radius
+                            </option>
+                            <option id="thruster-life-3">
+                                Thruster Life
+                            </option>
+                            <option id="thruster-speed-3">
+                                Thruster Speed
+                            </option>
+                            <option id="overheat-delay-3">
+                                Overheat Delay
+                            </option>
+                            <option id="fire-resist-3">
+                                Fire Resist
+                            </option>
+                            <option id="ice-resist-3">
+                                Ice Resist
+                            </option>
+                            <option id="elec-resist-3">
+                                Electric Resist
+                            </option>
+                            <option id="armor-dmg-resist-3">
+                                Armor Damage Resist
+                            </option>
+                            <option id="armor-max-3">
+                                Armor Max
+                            </option>
+                            <option id="shield-max-3">
+                                Shield Max
+                            </option>
+                            <option id="shield-delay-3">
+                                Shield Delay
+                            </option>
+                            <option id="shield-refresh-3">
+                                Shield Refresh
+                            </option>
+                            <option id="kb1-dmg-3">
+                                Keybind 1 Damage
+                            </option>
+                            <option id="kb2-dmg-3">
+                                Keybind 2 Damage
+                            </option>
+                            <option id="kb1-speed-3">
+                                Keybind 1 Speed
+                            </option>
+                            <option id="kb2-Speed-3">
+                                Keybind 2 Speed
+                            </option>
+                            <option id="gear-dmg-3">
+                                Gear Damage
+                            </option>
+                            <option id="gear-speed-3">
+                                Gear Speed
+                            </option>
+                            <option id="ult-dmg-3">
+                                Ultimate Damage
+                            </option>
+                            <option id="ult-speed-3">
+                                Ultimate Speed
+                            </option>
+                            <option id="melee-3">
+                                Melee
+                            </option>
+                            <option id="combo-dmg-3">
+                                Combo Damage
+                            </option>
+                            <option id="combo-targets-3">
+                                Combo Targets
+                            </option>
+                            <option id="crit-dmg-3">
+                                Critical Damage
+                            </option>
+                            <option id="support-speed-3">
+                                Support Speed
+                            </option>
+                            <option id="elem-dmg-3">
+                                Elemental Damage
+                            </option>
+                            <option id="dmg-3">
+                                Damage
+                            </option>
+                            <option id="force-3">
+                                Force
+                            </option>
+                            <option id="effect-3">
+                                Effect
+                            </option>
+                            <option id="ice-effect-3">
+                                Ice Effect
+                            </option>
+                            <option id="fire-effect-3">
+                                Fire Effect
+                            </option>
+                            <option id="electric-effect-3">
+                                Electric Effect
+                            </option>
+                            <option id="weap-dmg-3">
+                                Weapon Damage
+                            </option>
+                            <option id="weap-clip-3">
+                                Weapon Clip
+                            </option>
+                            <option id="weap-ammo-3">
+                                Weapon Ammo
+                            </option>
+                            <option id="weap-aim-3">
+                                Weapon Aim
+                            </option>
+                            <option id="weap-fire-rate-3">
+                                Weapon Fire Rate
+                            </option>
+                            <option id="weap-reload-time-3">
+                                Weapon Reload Time
+                            </option>
+                            <option id="weap-blast-dmg-3">
+                                Weapon Blast Damage
+                            </option>
+                            <option id="gear-symbol-dmg-3">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 3 Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half">
+                    <div class="select" id="dropdown-menu-4">
+                        <select>
+                            <option id="ammo-drop-rate-4">
+                                Ammo Drop Rate
+                            </option>
+                            <option id="repair-drop-rate-4">
+                                Repair Drop Rate
+                            </option>
+                            <option id="supply-drop-rate-4">
+                                Supply Drop Rate
+                            </option>
+                            <option id="ammo-drop-qual-4">
+                                Ammo Drop Quality
+                            </option>
+                            <option id="repair-drop-qual-4">
+                                Repair Drop Quality
+                            </option>
+                            <option id="supply-luck-4">
+                                Supply Luck
+                            </option>
+                            <option id="harvest-bonus-4">
+                                Harvest Bonus
+                            </option>
+                            <option id="pickup-radius-4">
+                                Pickup Radius
+                            </option>
+                            <option id="thruster-life-4">
+                                Thruster Life
+                            </option>
+                            <option id="thruster-speed-4">
+                                Thruster Speed
+                            </option>
+                            <option id="overheat-delay-4">
+                                Overheat Delay
+                            </option>
+                            <option id="fire-resist-4">
+                                Fire Resist
+                            </option>
+                            <option id="ice-resist-4">
+                                Ice Resist
+                            </option>
+                            <option id="elec-resist-4">
+                                Electric Resist
+                            </option>
+                            <option id="armor-dmg-resist-4">
+                                Armor Damage Resist
+                            </option>
+                            <option id="armor-max-4">
+                                Armor Max
+                            </option>
+                            <option id="shield-max-4">
+                                Shield Max
+                            </option>
+                            <option id="shield-delay-4">
+                                Shield Delay
+                            </option>
+                            <option id="shield-refresh-4">
+                                Shield Refresh
+                            </option>
+                            <option id="kb1-dmg-4">
+                                Keybind 1 Damage
+                            </option>
+                            <option id="kb2-dmg-4">
+                                Keybind 2 Damage
+                            </option>
+                            <option id="kb1-speed-4">
+                                Keybind 1 Speed
+                            </option>
+                            <option id="kb2-Speed-4">
+                                Keybind 2 Speed
+                            </option>
+                            <option id="gear-dmg-4">
+                                Gear Damage
+                            </option>
+                            <option id="gear-speed-4">
+                                Gear Speed
+                            </option>
+                            <option id="ult-dmg-4">
+                                Ultimate Damage
+                            </option>
+                            <option id="ult-speed-4">
+                                Ultimate Speed
+                            </option>
+                            <option id="melee-4">
+                                Melee
+                            </option>
+                            <option id="combo-dmg-4">
+                                Combo Damage
+                            </option>
+                            <option id="combo-targets-4">
+                                Combo Targets
+                            </option>
+                            <option id="crit-dmg-4">
+                                Critical Damage
+                            </option>
+                            <option id="support-speed-4">
+                                Support Speed
+                            </option>
+                            <option id="elem-dmg-4">
+                                Elemental Damage
+                            </option>
+                            <option id="dmg-4">
+                                Damage
+                            </option>
+                            <option id="force-4">
+                                Force
+                            </option>
+                            <option id="effect-4">
+                                Effect
+                            </option>
+                            <option id="ice-effect-4">
+                                Ice Effect
+                            </option>
+                            <option id="fire-effect-4">
+                                Fire Effect
+                            </option>
+                            <option id="electric-effect-4">
+                                Electric Effect
+                            </option>
+                            <option id="weap-dmg-4">
+                                Weapon Damage
+                            </option>
+                            <option id="weap-clip-4">
+                                Weapon Clip
+                            </option>
+                            <option id="weap-ammo-4">
+                                Weapon Ammo
+                            </option>
+                            <option id="weap-aim-4">
+                                Weapon Aim
+                            </option>
+                            <option id="weap-fire-rate-4">
+                                Weapon Fire Rate
+                            </option>
+                            <option id="weap-reload-time-4">
+                                Weapon Reload Time
+                            </option>
+                            <option id="weap-blast-dmg-4">
+                                Weapon Blast Damage
+                            </option>
+                            <option id="gear-symbol-dmg-4">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 4 Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-one-quarter has-background-warning">
+            <p class="title">Weapon 2</p>
+            <div class="columns">
+                <div class="column is-one-third">
+                    <p class="title">Damage</p>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" id="weap-1-dmg-value" type="text" placeholder="Damage Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <p class="title">RPM</p>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" id="weap-1-rpm-value" type="text" placeholder="RPM Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <p class="title">Ammo</p>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" id="weap-1-ammo-value" type="text" placeholder="Ammo Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="title">Inscriptions</p>
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="select" id="dropdown-menu-1">
+                        <select>
+                            <option id="ammo-drop-rate-1">
+                                Ammo Drop Rate
+                            </option>
+                            <option id="repair-drop-rate-1">
+                                Repair Drop Rate
+                            </option>
+                            <option id="supply-drop-rate-1">
+                                Supply Drop Rate
+                            </option>
+                            <option id="ammo-drop-qual-1">
+                                Ammo Drop Quality
+                            </option>
+                            <option id="repair-drop-qual-1">
+                                Repair Drop Quality
+                            </option>
+                            <option id="supply-luck-1">
+                                Supply Luck
+                            </option>
+                            <option id="harvest-bonus-1">
+                                Harvest Bonus
+                            </option>
+                            <option id="pickup-radius-1">
+                                Pickup Radius
+                            </option>
+                            <option id="thruster-life-1">
+                                Thruster Life
+                            </option>
+                            <option id="thruster-speed-1">
+                                Thruster Speed
+                            </option>
+                            <option id="overheat-delay-1">
+                                Overheat Delay
+                            </option>
+                            <option id="fire-resist-1">
+                                Fire Resist
+                            </option>
+                            <option id="ice-resist-1">
+                                Ice Resist
+                            </option>
+                            <option id="elec-resist-1">
+                                Electric Resist
+                            </option>
+                            <option id="armor-dmg-resist-1">
+                                Armor Damage Resist
+                            </option>
+                            <option id="armor-max-1">
+                                Armor Max
+                            </option>
+                            <option id="shield-max-1">
+                                Shield Max
+                            </option>
+                            <option id="shield-delay-1">
+                                Shield Delay
+                            </option>
+                            <option id="shield-refresh-1">
+                                Shield Refresh
+                            </option>
+                            <option id="kb1-dmg-1">
+                                Keybind 1 Damage
+                            </option>
+                            <option id="kb1-dmg-2">
+                                Keybind 1 Damage
+                            </option>
+                            <option id="kb1-speed-1">
+                                Keybind 1 Speed
+                            </option>
+                            <option id="kb1-Speed-2">
+                                Keybind 1 Speed
+                            </option>
+                            <option id="gear-dmg-1">
+                                Gear Damage
+                            </option>
+                            <option id="gear-speed-1">
+                                Gear Speed
+                            </option>
+                            <option id="ult-dmg-1">
+                                Ultimate Damage
+                            </option>
+                            <option id="ult-speed-1">
+                                Ultimate Speed
+                            </option>
+                            <option id="melee-1">
+                                Melee
+                            </option>
+                            <option id="combo-dmg-1">
+                                Combo Damage
+                            </option>
+                            <option id="combo-targets-1">
+                                Combo Targets
+                            </option>
+                            <option id="crit-dmg-1">
+                                Critical Damage
+                            </option>
+                            <option id="support-speed-1">
+                                Support Speed
+                            </option>
+                            <option id="elem-dmg-1">
+                                Elemental Damage
+                            </option>
+                            <option id="dmg-1">
+                                Damage
+                            </option>
+                            <option id="force-1">
+                                Force
+                            </option>
+                            <option id="effect-1">
+                                Effect
+                            </option>
+                            <option id="ice-effect-1">
+                                Ice Effect
+                            </option>
+                            <option id="fire-effect-1">
+                                Fire Effect
+                            </option>
+                            <option id="electric-effect-1">
+                                Electric Effect
+                            </option>
+                            <option id="weap-dmg-1">
+                                Weapon Damage
+                            </option>
+                            <option id="weap-clip-1">
+                                Weapon Clip
+                            </option>
+                            <option id="weap-ammo-1">
+                                Weapon Ammo
+                            </option>
+                            <option id="weap-aim-1">
+                                Weapon Aim
+                            </option>
+                            <option id="weap-fire-rate-1">
+                                Weapon Fire Rate
+                            </option>
+                            <option id="weap-reload-time-1">
+                                Weapon Reload Time
+                            </option>
+                            <option id="weap-blast-dmg-1">
+                                Weapon Blast Damage
+                            </option>
+                            <option id="gear-symbol-dmg-1">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 1 Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-half">
+                    <div class="select" id="dropdown-menu-2">
+                        <select>
+                            <option id="ammo-drop-rate-2">
+                                Ammo Drop Rate
+                            </option>
+                            <option id="repair-drop-rate-2">
+                                Repair Drop Rate
+                            </option>
+                            <option id="supply-drop-rate-2">
+                                Supply Drop Rate
+                            </option>
+                            <option id="ammo-drop-qual-2">
+                                Ammo Drop Quality
+                            </option>
+                            <option id="repair-drop-qual-2">
+                                Repair Drop Quality
+                            </option>
+                            <option id="supply-luck-2">
+                                Supply Luck
+                            </option>
+                            <option id="harvest-bonus-2">
+                                Harvest Bonus
+                            </option>
+                            <option id="pickup-radius-2">
+                                Pickup Radius
+                            </option>
+                            <option id="thruster-life-2">
+                                Thruster Life
+                            </option>
+                            <option id="thruster-speed-2">
+                                Thruster Speed
+                            </option>
+                            <option id="overheat-delay-2">
+                                Overheat Delay
+                            </option>
+                            <option id="fire-resist-2">
+                                Fire Resist
+                            </option>
+                            <option id="ice-resist-2">
+                                Ice Resist
+                            </option>
+                            <option id="elec-resist-2">
+                                Electric Resist
+                            </option>
+                            <option id="armor-dmg-resist-2">
+                                Armor Damage Resist
+                            </option>
+                            <option id="armor-max-2">
+                                Armor Max
+                            </option>
+                            <option id="shield-max-2">
+                                Shield Max
+                            </option>
+                            <option id="shield-delay-2">
+                                Shield Delay
+                            </option>
+                            <option id="shield-refresh-2">
+                                Shield Refresh
+                            </option>
+                            <option id="kb1-dmg-2">
+                                Keybind 1 Damage
+                            </option>
+                            <option id="kb2-dmg-2">
+                                Keybind 2 Damage
+                            </option>
+                            <option id="kb1-speed-2">
+                                Keybind 1 Speed
+                            </option>
+                            <option id="kb2-Speed-2">
+                                Keybind 2 Speed
+                            </option>
+                            <option id="gear-dmg-2">
+                                Gear Damage
+                            </option>
+                            <option id="gear-speed-2">
+                                Gear Speed
+                            </option>
+                            <option id="ult-dmg-2">
+                                Ultimate Damage
+                            </option>
+                            <option id="ult-speed-2">
+                                Ultimate Speed
+                            </option>
+                            <option id="melee-2">
+                                Melee
+                            </option>
+                            <option id="combo-dmg-2">
+                                Combo Damage
+                            </option>
+                            <option id="combo-targets-2">
+                                Combo Targets
+                            </option>
+                            <option id="crit-dmg-2">
+                                Critical Damage
+                            </option>
+                            <option id="support-speed-2">
+                                Support Speed
+                            </option>
+                            <option id="elem-dmg-2">
+                                Elemental Damage
+                            </option>
+                            <option id="dmg-2">
+                                Damage
+                            </option>
+                            <option id="force-2">
+                                Force
+                            </option>
+                            <option id="effect-2">
+                                Effect
+                            </option>
+                            <option id="ice-effect-2">
+                                Ice Effect
+                            </option>
+                            <option id="fire-effect-2">
+                                Fire Effect
+                            </option>
+                            <option id="electric-effect-2">
+                                Electric Effect
+                            </option>
+                            <option id="weap-dmg-2">
+                                Weapon Damage
+                            </option>
+                            <option id="weap-clip-2">
+                                Weapon Clip
+                            </option>
+                            <option id="weap-ammo-2">
+                                Weapon Ammo
+                            </option>
+                            <option id="weap-aim-2">
+                                Weapon Aim
+                            </option>
+                            <option id="weap-fire-rate-2">
+                                Weapon Fire Rate
+                            </option>
+                            <option id="weap-reload-time-2">
+                                Weapon Reload Time
+                            </option>
+                            <option id="weap-blast-dmg-2">
+                                Weapon Blast Damage
+                            </option>
+                            <option id="gear-symbol-dmg-2">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 2 Value">
+                            <span class="icon is-right">
+                                    <i class="fas fa-percent"></i>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="select" id="dropdown-menu-3">
+                        <select>
+                            <option id="ammo-drop-rate-3">
+                                Ammo Drop Rate
+                            </option>
+                            <option id="repair-drop-rate-3">
+                                Repair Drop Rate
+                            </option>
+                            <option id="supply-drop-rate-3">
+                                Supply Drop Rate
+                            </option>
+                            <option id="ammo-drop-qual-3">
+                                Ammo Drop Quality
+                            </option>
+                            <option id="repair-drop-qual-3">
+                                Repair Drop Quality
+                            </option>
+                            <option id="supply-luck-3">
+                                Supply Luck
+                            </option>
+                            <option id="harvest-bonus-3">
+                                Harvest Bonus
+                            </option>
+                            <option id="pickup-radius-3">
+                                Pickup Radius
+                            </option>
+                            <option id="thruster-life-3">
+                                Thruster Life
+                            </option>
+                            <option id="thruster-speed-3">
+                                Thruster Speed
+                            </option>
+                            <option id="overheat-delay-3">
+                                Overheat Delay
+                            </option>
+                            <option id="fire-resist-3">
+                                Fire Resist
+                            </option>
+                            <option id="ice-resist-3">
+                                Ice Resist
+                            </option>
+                            <option id="elec-resist-3">
+                                Electric Resist
+                            </option>
+                            <option id="armor-dmg-resist-3">
+                                Armor Damage Resist
+                            </option>
+                            <option id="armor-max-3">
+                                Armor Max
+                            </option>
+                            <option id="shield-max-3">
+                                Shield Max
+                            </option>
+                            <option id="shield-delay-3">
+                                Shield Delay
+                            </option>
+                            <option id="shield-refresh-3">
+                                Shield Refresh
+                            </option>
+                            <option id="kb1-dmg-3">
+                                Keybind 1 Damage
+                            </option>
+                            <option id="kb2-dmg-3">
+                                Keybind 2 Damage
+                            </option>
+                            <option id="kb1-speed-3">
+                                Keybind 1 Speed
+                            </option>
+                            <option id="kb2-Speed-3">
+                                Keybind 2 Speed
+                            </option>
+                            <option id="gear-dmg-3">
+                                Gear Damage
+                            </option>
+                            <option id="gear-speed-3">
+                                Gear Speed
+                            </option>
+                            <option id="ult-dmg-3">
+                                Ultimate Damage
+                            </option>
+                            <option id="ult-speed-3">
+                                Ultimate Speed
+                            </option>
+                            <option id="melee-3">
+                                Melee
+                            </option>
+                            <option id="combo-dmg-3">
+                                Combo Damage
+                            </option>
+                            <option id="combo-targets-3">
+                                Combo Targets
+                            </option>
+                            <option id="crit-dmg-3">
+                                Critical Damage
+                            </option>
+                            <option id="support-speed-3">
+                                Support Speed
+                            </option>
+                            <option id="elem-dmg-3">
+                                Elemental Damage
+                            </option>
+                            <option id="dmg-3">
+                                Damage
+                            </option>
+                            <option id="force-3">
+                                Force
+                            </option>
+                            <option id="effect-3">
+                                Effect
+                            </option>
+                            <option id="ice-effect-3">
+                                Ice Effect
+                            </option>
+                            <option id="fire-effect-3">
+                                Fire Effect
+                            </option>
+                            <option id="electric-effect-3">
+                                Electric Effect
+                            </option>
+                            <option id="weap-dmg-3">
+                                Weapon Damage
+                            </option>
+                            <option id="weap-clip-3">
+                                Weapon Clip
+                            </option>
+                            <option id="weap-ammo-3">
+                                Weapon Ammo
+                            </option>
+                            <option id="weap-aim-3">
+                                Weapon Aim
+                            </option>
+                            <option id="weap-fire-rate-3">
+                                Weapon Fire Rate
+                            </option>
+                            <option id="weap-reload-time-3">
+                                Weapon Reload Time
+                            </option>
+                            <option id="weap-blast-dmg-3">
+                                Weapon Blast Damage
+                            </option>
+                            <option id="gear-symbol-dmg-3">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 3 Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half">
+                    <div class="select" id="dropdown-menu-4">
+                        <select>
+                            <option id="ammo-drop-rate-4">
+                                Ammo Drop Rate
+                            </option>
+                            <option id="repair-drop-rate-4">
+                                Repair Drop Rate
+                            </option>
+                            <option id="supply-drop-rate-4">
+                                Supply Drop Rate
+                            </option>
+                            <option id="ammo-drop-qual-4">
+                                Ammo Drop Quality
+                            </option>
+                            <option id="repair-drop-qual-4">
+                                Repair Drop Quality
+                            </option>
+                            <option id="supply-luck-4">
+                                Supply Luck
+                            </option>
+                            <option id="harvest-bonus-4">
+                                Harvest Bonus
+                            </option>
+                            <option id="pickup-radius-4">
+                                Pickup Radius
+                            </option>
+                            <option id="thruster-life-4">
+                                Thruster Life
+                            </option>
+                            <option id="thruster-speed-4">
+                                Thruster Speed
+                            </option>
+                            <option id="overheat-delay-4">
+                                Overheat Delay
+                            </option>
+                            <option id="fire-resist-4">
+                                Fire Resist
+                            </option>
+                            <option id="ice-resist-4">
+                                Ice Resist
+                            </option>
+                            <option id="elec-resist-4">
+                                Electric Resist
+                            </option>
+                            <option id="armor-dmg-resist-4">
+                                Armor Damage Resist
+                            </option>
+                            <option id="armor-max-4">
+                                Armor Max
+                            </option>
+                            <option id="shield-max-4">
+                                Shield Max
+                            </option>
+                            <option id="shield-delay-4">
+                                Shield Delay
+                            </option>
+                            <option id="shield-refresh-4">
+                                Shield Refresh
+                            </option>
+                            <option id="kb1-dmg-4">
+                                Keybind 1 Damage
+                            </option>
+                            <option id="kb2-dmg-4">
+                                Keybind 2 Damage
+                            </option>
+                            <option id="kb1-speed-4">
+                                Keybind 1 Speed
+                            </option>
+                            <option id="kb2-Speed-4">
+                                Keybind 2 Speed
+                            </option>
+                            <option id="gear-dmg-4">
+                                Gear Damage
+                            </option>
+                            <option id="gear-speed-4">
+                                Gear Speed
+                            </option>
+                            <option id="ult-dmg-4">
+                                Ultimate Damage
+                            </option>
+                            <option id="ult-speed-4">
+                                Ultimate Speed
+                            </option>
+                            <option id="melee-4">
+                                Melee
+                            </option>
+                            <option id="combo-dmg-4">
+                                Combo Damage
+                            </option>
+                            <option id="combo-targets-4">
+                                Combo Targets
+                            </option>
+                            <option id="crit-dmg-4">
+                                Critical Damage
+                            </option>
+                            <option id="support-speed-4">
+                                Support Speed
+                            </option>
+                            <option id="elem-dmg-4">
+                                Elemental Damage
+                            </option>
+                            <option id="dmg-4">
+                                Damage
+                            </option>
+                            <option id="force-4">
+                                Force
+                            </option>
+                            <option id="effect-4">
+                                Effect
+                            </option>
+                            <option id="ice-effect-4">
+                                Ice Effect
+                            </option>
+                            <option id="fire-effect-4">
+                                Fire Effect
+                            </option>
+                            <option id="electric-effect-4">
+                                Electric Effect
+                            </option>
+                            <option id="weap-dmg-4">
+                                Weapon Damage
+                            </option>
+                            <option id="weap-clip-4">
+                                Weapon Clip
+                            </option>
+                            <option id="weap-ammo-4">
+                                Weapon Ammo
+                            </option>
+                            <option id="weap-aim-4">
+                                Weapon Aim
+                            </option>
+                            <option id="weap-fire-rate-4">
+                                Weapon Fire Rate
+                            </option>
+                            <option id="weap-reload-time-4">
+                                Weapon Reload Time
+                            </option>
+                            <option id="weap-blast-dmg-4">
+                                Weapon Blast Damage
+                            </option>
+                            <option id="gear-symbol-dmg-4">
+                                Gear Symbol Damage (Pertains to the weapon itself)
+                            </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-right">
+                            <input class="input" type="text" placeholder="Component 4 Value">
+                            <span class="icon is-right">
+                                <i class="fas fa-percent"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<script src="script.js"></script>
+
+</body>
+</html>

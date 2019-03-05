@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include partials/head.ejs %>
+</head>
+
+<body>
+<form id="input-form">
+    <section class="section">
+        <div class="columns">
+            <div class="column is-one-fifth has-text-centered has-background-primary">
+                <p class="title is-size-1">Support</p>
+            </div>
+
+            <div class="column is-one-quarter has-background-info">
+                <div class="columns">
+                    <div class="column" id="support-recharge">
+                        <% include partials/recharge.ejs %>
+                    </div>
+                    <div class="column" id="support-duration">
+                        <% include partials/duration.ejs %>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-one-quarter has-background-warning">
+                <p class="title">Inscriptions</p>
+                <div class="columns">
+                    <div class="column is-half" id="support-inscript-inputValueBox-1">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="support-inscript-inputValueBox-2">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column is-half" id="support-inscript-inputValueBox-3">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="support-inscript-inputValueBox-4">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="columns">
+            <div class="column is-one-fifth has-text-centered has-background-primary">
+                <p class="title is-size-1">Gears</p>
+            </div>
+
+            <div class="column is-one-quarter has-background-info">
+                <p class="title">Gear 1</p>
+                <div class="columns">
+                    <div class="column is-one-half has-text-centered" id="gear-1-dmg">
+                        <% include partials/damage.ejs %>
+                    </div>
+                    <div class="column is-one-half has-text-centered" id="gear-1-recharge">
+                        <% include partials/recharge.ejs %>
+                    </div>
+                </div>
+
+                <p class="title">Inscriptions</p>
+                <div class="columns">
+                    <div class="column is-half" id="gear-1-inscript-inputValueBox-1">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="gear-1-inscript-inputValueBox-2">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column is-half" id="gear-1-inscript-inputValueBox-3">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+
+                    <div class="column is-half" id="gear-1-inscript-inputValueBox-4">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-one-quarter has-background-warning">
+                <p class="title">Gear 2</p>
+                <div class="columns">
+                    <div class="column is-one-half has-text-centered" id="gear-2-dmg">
+                        <% include partials/damage.ejs %>
+                    </div>
+                    <div class="column is-one-half has-text-centered" id="gear-2-recharge">
+                        <% include partials/recharge.ejs %>
+                    </div>
+                </div>
+
+                <p class="title">Inscriptions</p>
+                <div class="columns">
+                    <div class="column is-half" id="gear-2-inscript-inputValueBox-1">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+
+                    <div class="column is-half" id="gear-2-inscript-inputValueBox-2">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column is-half" id="gear-2-inscript-inputValueBox-3">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="gear-2-inscript-inputValueBox-4">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="columns">
+            <div class="column is-one-fifth has-background-primary">
+                <p class="title">Weapons</p>
+            </div>
+
+            <div class="column is-one-quarter has-background-info">
+                <p class="title">Weapon 1</p>
+                <div class="columns">
+                    <div class="column is-one-third" id="weap-1-dmg">
+                        <% include partials/damage.ejs%>
+                    </div>
+                    <div class="column is-one-third" id="weap-1-rmp">
+                        <% include partials/rpm.ejs %>
+                    </div>
+                    <div class="column is-one-third" id="weap-1-ammo">
+                        <% include partials/ammo.ejs %>
+                    </div>
+                </div>
+
+                <p class="title">Inscriptions</p>
+                <div class="columns">
+                    <div class="column is-half" id="weap-1-inscript-inputValueBox-1">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="weap-1-inscript-inputValueBox-2">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column is-half" id="weap-1-inscript-inputValueBox-3">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="weap-1-inscript-inputValueBox-4">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-one-quarter has-background-warning">
+                <p class="title">Weapon 2</p>
+                <div class="columns">
+                    <div class="column is-one-third" id="weap-2-dmg">
+                        <% include partials/damage.ejs %>
+                    </div>
+                    <div class="column is-one-third" id="weap-2-rpm">
+                        <% include partials/rpm.ejs%>
+                    </div>
+                    <div class="column is-one-third" id="weap-2-ammo">
+                        <% include partials/ammo.ejs %>
+                    </div>
+                </div>
+
+                <p class="title">Inscriptions</p>
+                <div class="columns">
+                    <div class="column is-half" id="weap-2-inscript-inputValueBox-1">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="weap-2-inscript-inputValueBox-2">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column is-half" id="weap-2-inscript-inputValueBox-3">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="weap-2-inscript-inputValueBox-4">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="columns">
+            <div class="column is-one-fifth has-background-primary">
+                <p class="title">Components</p>
+            </div>
+            <div class="column is-one-quarter has-background-info">
+                <p class="title">Component 1</p>
+                <div class="columns">
+                    <div class="column is-half" id="comp-1-armor">
+                        <% include partials/armor.ejs %>
+                    </div>
+                    <div class="column is-half" id="comp-1-shield">
+                        <% include partials/shield.ejs%>
+                    </div>
+                </div>
+                <p class="title">Inscriptions</p>
+                <div class="columns">
+                    <div class="column is-half" id="comp-1-inscript-inputValueBox-1">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="comp-1-inscript-inputValueBox-2">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-half" id="comp-1-inscript-inputValueBox-3">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="comp-1-inscript-inputValueBox-4">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-one-quarter has-background-info">
+                <p class="title">Component 2</p>
+                <div class="columns">
+                    <div class="column is-half" id="comp-2-armor">
+                        <% include partials/armor.ejs %>
+                    </div>
+                    <div class="column is-half" id="comp-2-shield">
+                        <% include partials/shield.ejs%>
+                    </div>
+                </div>
+                <p class="title">Inscriptions</p>
+                <div class="columns">
+                    <div class="column is-half" id="comp-2-inscript-inputValueBox-1">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="comp-2-inscript-inputValueBox-2">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-half" id="comp-2-inscript-inputValueBox-3">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="comp-2-inscript-inputValueBox-4">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="columns">
+            <div class="column is-one-fifth has-background-primary">
+                <p class="title">Components</p>
+            </div>
+            <div class="column is-one-quarter has-background-info">
+                <p class="title">Component 3</p>
+                <div class="columns">
+                    <div class="column is-half" id="comp-3-armor">
+                        <% include partials/armor.ejs %>
+                    </div>
+                    <div class="column is-half" id="comp-3-shield">
+                        <% include partials/shield.ejs%>
+                    </div>
+                </div>
+                <p class="title">Inscriptions</p>
+                <div class="columns">
+                    <div class="column is-half" id="comp-3-inscript-inputValueBox-1">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="comp-3-inscript-inputValueBox-2">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-half" id="comp-3-inscript-inputValueBox-3">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="comp-3-inscript-inputValueBox-4">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-one-quarter has-background-info">
+                <p class="title">Component 4</p>
+                <div class="columns">
+                    <div class="column is-half" id="comp-4-armor">
+                        <% include partials/armor.ejs %>
+                    </div>
+                    <div class="column is-half" id="comp-4-shield">
+                        <% include partials/shield.ejs%>
+                    </div>
+                </div>
+                <p class="title">Inscriptions</p>
+                <div class="columns">
+                    <div class="column is-half" id="comp-4-inscript-inputValueBox-1">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="comp-4-inscript-inputValueBox-2">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-half" id="comp-4-inscript-inputValueBox-3">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="comp-4-inscript-inputValueBox-4">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="columns">
+            <div class="column is-one-fifth has-background-primary">
+                <p class="title">Components</p>
+            </div>
+            <div class="column is-one-quarter has-background-info">
+                <p class="title">Component 5</p>
+                <div class="columns">
+                    <div class="column is-half" id="comp-5-armor">
+                        <% include partials/armor.ejs %>
+                    </div>
+                    <div class="column is-half" id="comp-5-shield">
+                        <% include partials/shield.ejs%>
+                    </div>
+                </div>
+                <p class="title">Inscriptions</p>
+                <div class="columns">
+                    <div class="column is-half" id="comp-5-inscript-inputValueBox-1">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="comp-5-inscript-inputValueBox-2">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-half" id="comp-5-inscript-inputValueBox-3">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="comp-5-inscript-inputValueBox-4">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-one-quarter has-background-info">
+                <p class="title">Component 6</p>
+                <div class="columns">
+                    <div class="column is-half" id="comp-6-armor">
+                        <% include partials/armor.ejs %>
+                    </div>
+                    <div class="column is-half" id="comp-6-shield">
+                        <% include partials/shield.ejs%>
+                    </div>
+                </div>
+                <p class="title">Inscriptions</p>
+                <div class="columns">
+                    <div class="column is-half" id="comp-6-inscript-inputValueBox-1">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="comp-6-inscript-inputValueBox-2">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-half" id="comp-6-inscript-inputValueBox-3">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                    <div class="column is-half" id="comp-6-inscript-inputValueBox-4">
+                        <% include partials/inscriptions.ejs %>
+                        <% include partials/inputValueBox.ejs %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="control">
+            <button class="button is-large is-fullwidth is-success is-outlined">Compute</button>
+        </div>
+    </section>
+</form>
+
+<!--This section will contain the results-->
+<section class="section">
+    <h1 class="title">Calculated Results</h1>
+    <div class="columns is-multiline">
+        <div class="column  is-12-tablet is-6-desktop is-3-widescreen">
+            <div class="notification has-background-success has-text-white has-text">
+                <p id="component-armor" class="title is-1">Armor</p>
+                <p class="subtitle is-4">Component Armor Total</p>
+                <hr>
+                <p id="armor-percent-sum" class="title is-1">Armor Percent</p>
+                <p class="subtitle is-4">Percent Armor Total</p>
+                <hr>
+                <p id="total-armor" class="title is-1">Total Armor</p>
+                <p class="subtitle is-4">Armor Total</p>
+            </div>
+        </div>
+
+        <div class="column is-12-tablet is-6-desktop is-3-widescreen">
+            <div class="notification is-link has-text">
+                <p id="component-shield" class="title is-1">Shield</p>
+                <p class="subtitle is-4">Component Shield Total</p>
+                <hr>
+                <p id="shield-percent-sum" class="title is-1">Shield Percent</p>
+                <p class="subtitle is-4">Percent Shield Total</p>
+                <hr>
+                <p id="total-shield" class="title is-1">Total Shield</p>
+                <p class="subtitle is-4">Shield Total</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="columns is-multiline">
+        <div class="column  is-12-tablet is-6-desktop is-3-widescreen">
+            <div class="notification has-background-danger has-text-white has-text">
+                <p id="component-armor" class="title is-1">Fire</p>
+                <hr>
+                <p id="armor-percent-sum" class="title is-1">Resist Percent</p>
+                <p class="subtitle is-4">Fire Resist Percent</p>
+                <hr>
+                <p id="total-armor" class="title is-1">Damage Percent</p>
+                <p class="subtitle is-4">Fire Damage Percent</p>
+            </div>
+        </div>
+
+        <div class="column is-12-tablet is-6-desktop is-3-widescreen">
+            <div class="notification is-info has-text">
+                <p id="component-shield" class="title is-1">Ice</p>
+                <hr>
+                <p id="shield-percent-sum" class="title is-1">Resist Percent</p>
+                <p class="subtitle is-4">Ice Resist Percent</p>
+                <hr>
+                <p id="total-shield" class="title is-1">Damage Percent</p>
+                <p class="subtitle is-4">Ice Damage Percent</p>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.getElementById("input-form").addEventListener("submit", compute);
+    function compute(e){
+        var x = document.getElementById('comp-6-armor');
+        var armorValue6 = x.getElementsByTagName("input");
+        var compArmorSum = componentArmorSum();
+        var compShieldSum = componentShieldSum();
+
+        console.log("Component Armor values sum: " + compArmorSum);
+        console.log("Component Shield values sum: " + compShieldSum);
+        e.preventDefault();
+    }
+
+    function componentArmorSum(){
+        var compArmors = [
+            document.getElementById('comp-1-armor'),
+            document.getElementById('comp-2-armor'),
+            document.getElementById('comp-3-armor'),
+            document.getElementById('comp-4-armor'),
+            document.getElementById('comp-5-armor'),
+            document.getElementById('comp-6-armor')
+        ];
+
+        var compArmorValues = [];
+        for(var j = 0; j < compArmors.length; j++){
+            compArmorValues[j] = compArmors[j].getElementsByClassName("input")[0].value;
+        }
+
+        var sum = 0;
+        for (var i = 0; i < 6; i++){
+            sum = parseInt(sum) +  parseInt(compArmorValues[i]);
+        }
+        return sum;
+    }
+
+    function componentShieldSum(){
+        var compShields = [
+            document.getElementById('comp-1-shield'),
+            document.getElementById('comp-2-shield'),
+            document.getElementById('comp-3-shield'),
+            document.getElementById('comp-4-shield'),
+            document.getElementById('comp-5-shield'),
+            document.getElementById('comp-6-shield')
+        ];
+
+        var compShieldValues = [];
+        for(var j = 0; j < compShields.length; j++){
+            compShieldValues[j] = compShields[j].getElementsByClassName("input")[0].value;
+        }
+
+        var sum = 0;
+        for (var i = 0; i < 6; i++){
+            sum = parseInt(sum) +  parseInt(compShieldValues[i]);
+        }
+        return sum;
+    }
+</script>
+</body>
+</html>
